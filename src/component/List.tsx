@@ -1,5 +1,3 @@
-import { StackDivider, VStack } from "@chakra-ui/react";
-
 const List = ({
   todos,
   doneFn,
@@ -17,12 +15,9 @@ const List = ({
   });
 
   return (
-    <VStack divider={<StackDivider />}
-    borderColor="black.100"
-    borderRadius="3px"
-    borderWidth="1px">
+    <>
       {todoItems}
-    </VStack>
+    </>
   );
 };
 

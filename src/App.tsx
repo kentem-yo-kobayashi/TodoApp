@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Todo from "./component/Todo";
-import { ChakraProvider } from "@chakra-ui/react";
 
 const initialTodos = ["店予約する", "卵買う", "郵便出す"];
 
