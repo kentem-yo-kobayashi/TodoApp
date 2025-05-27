@@ -6,11 +6,12 @@ const Form = ({ addFn }: { addFn: (v: string) => void }) => {
   return (
     <form>
       <input ref={inputRef} type="text" />
-      <button type="button"
+      <button
+        type="button"
         onClick={() => {
           if (!inputRef.current) return;
           addFn(inputRef.current.value);
-          inputRef.current.value = ""
+          inputRef.current.value = "";
         }}
       >
         追加
